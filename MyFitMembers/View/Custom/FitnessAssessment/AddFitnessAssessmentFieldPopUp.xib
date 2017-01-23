@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFitnessAssessmentFieldPopUp" customModule="MyFitMembers" customModuleProvider="target">
+            <connections>
+                <outlet property="labelHeader" destination="iWu-Wa-avH" id="OLU-GW-CMe"/>
+                <outlet property="textFieldAddField" destination="43J-aV-deh" id="Pwx-eI-JDL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zJJ-y1-WJ7">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Udj-2c-Q0u">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e4k-Zi-crN">
+                    <rect key="frame" x="30" y="180" width="540" height="180"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BJa-wI-uY8">
+                            <rect key="frame" x="0.0" y="132" width="540" height="48"/>
+                            <color key="backgroundColor" red="0.0" green="0.6588235294" blue="0.37647058820000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="uQP-0F-ULo"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnActionOk:" destination="-1" eventType="touchUpInside" id="70C-iR-58I"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Custom Fitness Test  " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWu-Wa-avH">
+                            <rect key="frame" x="20" y="20" width="500" height="25"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                            <color key="textColor" red="0.13725490200000001" green="0.14901960780000001" blue="0.15686274510000001" alpha="0.77168120159999998" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="BJa-wI-uY8" firstAttribute="leading" secondItem="e4k-Zi-crN" secondAttribute="leading" id="8Fc-Ro-YoT"/>
+                        <constraint firstAttribute="trailing" secondItem="iWu-Wa-avH" secondAttribute="trailing" constant="20" symbolic="YES" id="K72-hW-1KF"/>
+                        <constraint firstItem="iWu-Wa-avH" firstAttribute="leading" secondItem="e4k-Zi-crN" secondAttribute="leading" constant="20" symbolic="YES" id="KIK-sU-GMh"/>
+                        <constraint firstAttribute="bottom" secondItem="BJa-wI-uY8" secondAttribute="bottom" id="d1c-VI-7L2"/>
+                        <constraint firstItem="iWu-Wa-avH" firstAttribute="top" secondItem="e4k-Zi-crN" secondAttribute="top" constant="20" symbolic="YES" id="lX8-zT-qJv"/>
+                        <constraint firstAttribute="trailing" secondItem="BJa-wI-uY8" secondAttribute="trailing" id="qMH-q2-Rsr"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Fitness Test Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="43J-aV-deh">
+                    <rect key="frame" x="111" y="254" width="378" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="iLo-kl-Lnu"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="43J-aV-deh" firstAttribute="width" secondItem="e4k-Zi-crN" secondAttribute="width" multiplier="0.7" id="8LF-oJ-aN3"/>
+                <constraint firstItem="e4k-Zi-crN" firstAttribute="width" secondItem="zJJ-y1-WJ7" secondAttribute="width" multiplier="0.9" id="Dww-F7-cVp"/>
+                <constraint firstItem="e4k-Zi-crN" firstAttribute="centerY" secondItem="zJJ-y1-WJ7" secondAttribute="centerY" multiplier="0.9" id="Jct-Oy-afH"/>
+                <constraint firstItem="43J-aV-deh" firstAttribute="centerX" secondItem="e4k-Zi-crN" secondAttribute="centerX" id="QBc-ed-4ho"/>
+                <constraint firstItem="e4k-Zi-crN" firstAttribute="centerX" secondItem="zJJ-y1-WJ7" secondAttribute="centerX" id="QdA-pV-E9X"/>
+                <constraint firstAttribute="trailing" secondItem="Udj-2c-Q0u" secondAttribute="trailing" id="bbA-no-sG5"/>
+                <constraint firstAttribute="bottom" secondItem="Udj-2c-Q0u" secondAttribute="bottom" id="hLO-Gz-PqD"/>
+                <constraint firstItem="Udj-2c-Q0u" firstAttribute="leading" secondItem="zJJ-y1-WJ7" secondAttribute="leading" id="kKG-I2-Zai"/>
+                <constraint firstItem="e4k-Zi-crN" firstAttribute="height" secondItem="zJJ-y1-WJ7" secondAttribute="height" multiplier="0.3" id="n6c-xz-47r"/>
+                <constraint firstItem="Udj-2c-Q0u" firstAttribute="top" secondItem="zJJ-y1-WJ7" secondAttribute="top" id="uHs-7s-hgX"/>
+                <constraint firstItem="43J-aV-deh" firstAttribute="centerY" secondItem="e4k-Zi-crN" secondAttribute="centerY" id="zlf-sd-UpM"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

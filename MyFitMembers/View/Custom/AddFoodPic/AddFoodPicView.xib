@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFoodPicView" customModule="MyFitMembers" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ewJ-A9-Xtb">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W13-dW-eQ7">
+                    <rect key="frame" x="60" y="178" width="480" height="245"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nu-P3-HBM">
+                            <rect key="frame" x="0.0" y="49" width="480" height="48"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="rSH-Q3-56S"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                            <state key="normal" title="Snack">
+                                <color key="titleColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnActionMorningSnacks:" destination="-1" eventType="touchUpInside" id="Cmb-5b-4gO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Xv-NC-90W">
+                            <rect key="frame" x="0.0" y="98" width="480" height="48"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="q2I-my-RCK"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                            <state key="normal" title="Lunch">
+                                <color key="titleColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnActionLunch:" destination="-1" eventType="touchUpInside" id="0br-h9-m4w"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LiM-gF-GXR">
+                            <rect key="frame" x="0.0" y="147" width="480" height="48"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="XxN-57-K98"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                            <state key="normal" title="Snack">
+                                <color key="titleColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnActionEveningSnacks:" destination="-1" eventType="touchUpInside" id="0dj-gz-xja"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fG-F3-kPO">
+                            <rect key="frame" x="0.0" y="196" width="480" height="48"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="4SY-sU-CiJ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                            <state key="normal" title="Dinner">
+                                <color key="titleColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnActionDinner:" destination="-1" eventType="touchUpInside" id="GSJ-4E-C6u"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7f-7e-LY8">
+                            <rect key="frame" x="0.0" y="0.0" width="480" height="48"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="dEg-YJ-ObO"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                            <state key="normal" title="Breakfast">
+                                <color key="titleColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnActionBreakFast:" destination="-1" eventType="touchUpInside" id="0JV-0Y-0QZ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="3fG-F3-kPO" secondAttribute="bottom" constant="1" id="4Dp-iN-Eut"/>
+                        <constraint firstItem="p7f-7e-LY8" firstAttribute="top" secondItem="W13-dW-eQ7" secondAttribute="top" id="7Dy-eD-ADb"/>
+                        <constraint firstItem="8Xv-NC-90W" firstAttribute="trailing" secondItem="6nu-P3-HBM" secondAttribute="trailing" id="7Ol-pk-ekF"/>
+                        <constraint firstItem="3fG-F3-kPO" firstAttribute="leading" secondItem="p7f-7e-LY8" secondAttribute="leading" id="AGp-se-gXb"/>
+                        <constraint firstItem="LiM-gF-GXR" firstAttribute="height" secondItem="p7f-7e-LY8" secondAttribute="height" id="AjE-mz-ahd"/>
+                        <constraint firstItem="3fG-F3-kPO" firstAttribute="top" secondItem="LiM-gF-GXR" secondAttribute="bottom" constant="1" id="I2P-mZ-2Lw"/>
+                        <constraint firstItem="8Xv-NC-90W" firstAttribute="top" secondItem="6nu-P3-HBM" secondAttribute="bottom" constant="1" id="Iau-tw-KXa"/>
+                        <constraint firstItem="6nu-P3-HBM" firstAttribute="trailing" secondItem="p7f-7e-LY8" secondAttribute="trailing" id="K0h-Qe-9NJ"/>
+                        <constraint firstItem="LiM-gF-GXR" firstAttribute="leading" secondItem="p7f-7e-LY8" secondAttribute="leading" id="MRN-LM-XVd"/>
+                        <constraint firstItem="3fG-F3-kPO" firstAttribute="trailing" secondItem="p7f-7e-LY8" secondAttribute="trailing" id="QDH-yg-i5X"/>
+                        <constraint firstItem="LiM-gF-GXR" firstAttribute="top" secondItem="8Xv-NC-90W" secondAttribute="bottom" constant="1" id="TRW-j5-HqW"/>
+                        <constraint firstItem="6nu-P3-HBM" firstAttribute="leading" secondItem="p7f-7e-LY8" secondAttribute="leading" id="Xwy-Pr-wWS"/>
+                        <constraint firstItem="3fG-F3-kPO" firstAttribute="height" secondItem="p7f-7e-LY8" secondAttribute="height" id="c9P-MI-shM"/>
+                        <constraint firstItem="8Xv-NC-90W" firstAttribute="leading" secondItem="6nu-P3-HBM" secondAttribute="leading" id="lwe-W5-wKq"/>
+                        <constraint firstItem="LiM-gF-GXR" firstAttribute="trailing" secondItem="p7f-7e-LY8" secondAttribute="trailing" id="p6v-rh-BIb"/>
+                        <constraint firstItem="p7f-7e-LY8" firstAttribute="leading" secondItem="W13-dW-eQ7" secondAttribute="leading" id="usI-sH-ve9"/>
+                        <constraint firstAttribute="trailing" secondItem="p7f-7e-LY8" secondAttribute="trailing" id="yuH-GU-UeR"/>
+                        <constraint firstItem="6nu-P3-HBM" firstAttribute="top" secondItem="p7f-7e-LY8" secondAttribute="bottom" constant="1" id="zkk-gH-R6m"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ewJ-A9-Xtb" secondAttribute="bottom" id="33E-vH-Tlt"/>
+                <constraint firstItem="ewJ-A9-Xtb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6mZ-Kf-Yc6"/>
+                <constraint firstItem="W13-dW-eQ7" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.8" id="Tts-mX-v1T"/>
+                <constraint firstItem="W13-dW-eQ7" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="e1p-Ti-vpD"/>
+                <constraint firstAttribute="trailing" secondItem="ewJ-A9-Xtb" secondAttribute="trailing" id="eXX-bd-MD7"/>
+                <constraint firstItem="W13-dW-eQ7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="m7w-oM-bib"/>
+                <constraint firstItem="ewJ-A9-Xtb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="u1C-N9-cOX"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

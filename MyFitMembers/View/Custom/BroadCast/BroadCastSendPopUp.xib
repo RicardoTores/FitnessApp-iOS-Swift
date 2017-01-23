@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BroadCastSendPopUp" customModule="MyFitMembers" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="DP0-wH-FvQ">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yAt-n5-Erc">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eqx-7b-Ybi">
+                    <rect key="frame" x="30" y="176" width="540" height="188"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGi-jF-ZSL">
+                            <rect key="frame" x="20" y="36" width="500" height="96"/>
+                            <string key="text">Are you sure?
+
+Double check for spelling. 
+Broadcasts cannot be edited or deleted. 
+</string>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                            <color key="textColor" red="0.29019607843137252" green="0.29019607843137252" blue="0.29019607843137252" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQe-m0-fwN">
+                            <rect key="frame" x="270" y="140" width="270" height="48"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                            <state key="normal" title="Send">
+                                <color key="titleColor" red="0.054901960784313725" green="0.6588235294117647" blue="0.3529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnActionSend:" destination="-1" eventType="touchUpInside" id="GYs-46-PJw"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSA-2C-Vxr">
+                            <rect key="frame" x="0.0" y="140" width="270" height="48"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="ShC-rd-bmS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="16"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="0.0" alpha="0.54511870155038755" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnActionCancel:" destination="-1" eventType="touchUpInside" id="D02-49-gf5"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="dQe-m0-fwN" secondAttribute="bottom" id="3Tk-HY-CN3"/>
+                        <constraint firstItem="bGi-jF-ZSL" firstAttribute="top" secondItem="Eqx-7b-Ybi" secondAttribute="top" constant="36" id="4Bf-OE-6hY"/>
+                        <constraint firstItem="dSA-2C-Vxr" firstAttribute="leading" secondItem="Eqx-7b-Ybi" secondAttribute="leading" id="4eu-xx-Gsc"/>
+                        <constraint firstItem="dSA-2C-Vxr" firstAttribute="top" secondItem="bGi-jF-ZSL" secondAttribute="bottom" constant="8" symbolic="YES" id="96a-Wg-rLP"/>
+                        <constraint firstAttribute="bottom" secondItem="dSA-2C-Vxr" secondAttribute="bottom" id="B2e-lz-Le7"/>
+                        <constraint firstItem="dQe-m0-fwN" firstAttribute="width" secondItem="dSA-2C-Vxr" secondAttribute="width" id="XgM-bY-gdg"/>
+                        <constraint firstItem="bGi-jF-ZSL" firstAttribute="leading" secondItem="Eqx-7b-Ybi" secondAttribute="leading" constant="20" symbolic="YES" id="f0q-BU-ndu"/>
+                        <constraint firstAttribute="trailing" secondItem="dQe-m0-fwN" secondAttribute="trailing" id="kgD-9v-5LA"/>
+                        <constraint firstAttribute="trailing" secondItem="bGi-jF-ZSL" secondAttribute="trailing" constant="20" symbolic="YES" id="vyT-yM-5gb"/>
+                        <constraint firstItem="dQe-m0-fwN" firstAttribute="leading" secondItem="dSA-2C-Vxr" secondAttribute="trailing" id="wjb-Dk-hDP"/>
+                        <constraint firstItem="dQe-m0-fwN" firstAttribute="height" secondItem="dSA-2C-Vxr" secondAttribute="height" id="xvo-qs-2II"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yAt-n5-Erc" secondAttribute="trailing" id="2Bl-6W-2kP"/>
+                <constraint firstItem="yAt-n5-Erc" firstAttribute="leading" secondItem="DP0-wH-FvQ" secondAttribute="leading" id="4eM-V5-iS7"/>
+                <constraint firstItem="Eqx-7b-Ybi" firstAttribute="centerY" secondItem="DP0-wH-FvQ" secondAttribute="centerY" multiplier="0.9" id="Jl7-Py-Uly"/>
+                <constraint firstAttribute="bottom" secondItem="yAt-n5-Erc" secondAttribute="bottom" id="dUT-UB-jRL"/>
+                <constraint firstItem="Eqx-7b-Ybi" firstAttribute="width" secondItem="DP0-wH-FvQ" secondAttribute="width" multiplier="0.9" id="gc7-F9-Bez"/>
+                <constraint firstItem="yAt-n5-Erc" firstAttribute="top" secondItem="DP0-wH-FvQ" secondAttribute="top" id="jJP-i1-eDR"/>
+                <constraint firstItem="Eqx-7b-Ybi" firstAttribute="centerX" secondItem="DP0-wH-FvQ" secondAttribute="centerX" id="lTf-Wy-DGt"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

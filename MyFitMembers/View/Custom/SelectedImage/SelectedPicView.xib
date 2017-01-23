@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SelectedPicView" customModule="MyFitMembers" customModuleProvider="target">
+            <connections>
+                <outlet property="imageSelectedPic" destination="NFI-8R-6Ys" id="qck-L1-vBL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NFI-8R-6Ys">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                </imageView>
+                <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B2u-9Q-RgO">
+                    <rect key="frame" x="0.0" y="544" width="600" height="56"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="Ql9-ue-7H2"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q5F-a5-1oe">
+                    <rect key="frame" x="532" y="548" width="48" height="48"/>
+                    <state key="normal" image="ic_cross1"/>
+                    <connections>
+                        <action selector="btnActionRejectPic:" destination="-1" eventType="touchUpInside" id="eDt-8N-1QU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KHP-PA-Ena">
+                    <rect key="frame" x="20" y="548" width="48" height="48"/>
+                    <state key="normal" image="ic_tick-1"/>
+                    <connections>
+                        <action selector="btnActionAcceptPic:" destination="-1" eventType="touchUpInside" id="acz-UL-fHr"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="KHP-PA-Ena" firstAttribute="bottom" secondItem="Q5F-a5-1oe" secondAttribute="bottom" id="1W2-UH-k6c"/>
+                <constraint firstItem="NFI-8R-6Ys" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6ty-CC-2ud"/>
+                <constraint firstAttribute="trailing" secondItem="B2u-9Q-RgO" secondAttribute="trailing" id="Glv-AP-lLd"/>
+                <constraint firstAttribute="bottom" secondItem="NFI-8R-6Ys" secondAttribute="bottom" id="ImC-mG-qWE"/>
+                <constraint firstItem="Q5F-a5-1oe" firstAttribute="centerY" secondItem="B2u-9Q-RgO" secondAttribute="centerY" id="Rft-rL-EBX"/>
+                <constraint firstAttribute="bottom" secondItem="B2u-9Q-RgO" secondAttribute="bottom" id="f9N-Ye-OSR"/>
+                <constraint firstItem="B2u-9Q-RgO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gBh-zm-hUj"/>
+                <constraint firstAttribute="trailing" secondItem="NFI-8R-6Ys" secondAttribute="trailing" id="nf5-SH-o9o"/>
+                <constraint firstItem="KHP-PA-Ena" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="oPV-v7-XSG"/>
+                <constraint firstAttribute="trailing" secondItem="Q5F-a5-1oe" secondAttribute="trailing" constant="20" symbolic="YES" id="tAA-MA-Yp9"/>
+                <constraint firstItem="NFI-8R-6Ys" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="uKs-uh-k4e"/>
+                <constraint firstItem="Q5F-a5-1oe" firstAttribute="bottom" secondItem="NFI-8R-6Ys" secondAttribute="bottom" constant="-4" id="x0f-iO-6qb"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_cross1" width="48" height="48"/>
+        <image name="ic_tick-1" width="48" height="48"/>
+    </resources>
+</document>

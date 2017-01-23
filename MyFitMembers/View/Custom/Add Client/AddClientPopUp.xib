@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddClientPopUp" customModule="MyFitMembers" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K9r-4w-C8R">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mgk-U2-Vmj">
+                    <rect key="frame" x="30" y="186" width="540" height="228"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fu6-K5-Y75">
+                            <rect key="frame" x="0.0" y="180" width="540" height="48"/>
+                            <color key="backgroundColor" red="0.0" green="0.6588235294117647" blue="0.37647058823529411" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="ox4-pC-qYy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btnActionOk:" destination="-1" eventType="touchUpInside" id="7gd-ot-aZB"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An email was sent to the client with login info to access his/her account." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZSI-LN-n6V">
+                            <rect key="frame" x="40" y="84" width="460" height="39"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                            <color key="textColor" red="0.13725490196078433" green="0.14901960784313725" blue="0.15686274509803921" alpha="0.79896438953488369" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Client Added" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4NA-0G-E76">
+                            <rect key="frame" x="20" y="22" width="500" height="25"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ZSI-LN-n6V" firstAttribute="centerY" secondItem="Mgk-U2-Vmj" secondAttribute="centerY" multiplier="0.9" id="2Ry-i4-N4d"/>
+                        <constraint firstAttribute="trailing" secondItem="ZSI-LN-n6V" secondAttribute="trailing" constant="40" id="Ifi-4t-Wab"/>
+                        <constraint firstItem="ZSI-LN-n6V" firstAttribute="leading" secondItem="Mgk-U2-Vmj" secondAttribute="leading" constant="40" id="KlD-Xo-tZp"/>
+                        <constraint firstItem="ZSI-LN-n6V" firstAttribute="centerX" secondItem="Mgk-U2-Vmj" secondAttribute="centerX" id="LxN-wN-VFp"/>
+                        <constraint firstAttribute="trailing" secondItem="Fu6-K5-Y75" secondAttribute="trailing" id="Qo9-TP-UEZ"/>
+                        <constraint firstAttribute="trailing" secondItem="4NA-0G-E76" secondAttribute="trailing" constant="20" symbolic="YES" id="TiT-zd-5ch"/>
+                        <constraint firstItem="4NA-0G-E76" firstAttribute="top" secondItem="Mgk-U2-Vmj" secondAttribute="top" constant="22" id="UH8-oq-J7B"/>
+                        <constraint firstItem="4NA-0G-E76" firstAttribute="leading" secondItem="Mgk-U2-Vmj" secondAttribute="leading" constant="20" symbolic="YES" id="gZM-09-nEu"/>
+                        <constraint firstItem="Fu6-K5-Y75" firstAttribute="leading" secondItem="Mgk-U2-Vmj" secondAttribute="leading" id="is7-B2-jzT"/>
+                        <constraint firstAttribute="bottom" secondItem="Fu6-K5-Y75" secondAttribute="bottom" id="pUr-Px-H8u"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Mgk-U2-Vmj" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="DK6-eS-gmM"/>
+                <constraint firstItem="Mgk-U2-Vmj" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.9" id="J30-Jr-9wS"/>
+                <constraint firstItem="K9r-4w-C8R" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="NQJ-Z3-XGc"/>
+                <constraint firstItem="Mgk-U2-Vmj" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.38" id="RSf-o8-E35"/>
+                <constraint firstAttribute="bottom" secondItem="K9r-4w-C8R" secondAttribute="bottom" id="Zgy-St-t1o"/>
+                <constraint firstItem="K9r-4w-C8R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="eJC-1U-Kv7"/>
+                <constraint firstAttribute="trailing" secondItem="K9r-4w-C8R" secondAttribute="trailing" id="hch-ce-d58"/>
+                <constraint firstItem="Mgk-U2-Vmj" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qbf-A9-Jz1"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

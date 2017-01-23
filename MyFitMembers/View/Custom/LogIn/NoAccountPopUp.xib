@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoAccountPopUp" customModule="MyFitMembers" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="VmV-Et-zFg">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.60000002384185791" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rne-i0-UNM">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uBJ-Na-Qr8">
+                    <rect key="frame" x="30" y="161" width="540" height="219"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhG-L5-YAM">
+                            <rect key="frame" x="0.0" y="171" width="540" height="48"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="zb8-fm-9g7"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="14"/>
+                            <state key="normal" title="OK">
+                                <color key="titleColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="btnActionOk:" destination="-1" eventType="touchUpInside" id="6Z9-0b-PkX"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKr-0T-LhV">
+                            <rect key="frame" x="153" y="68" width="235" height="77"/>
+                            <string key="text">MyFitMembers is by invitation only. 
+Tell your gym/trainer to sign up 
+for our awesome training product at 
+MyFitMembers.com.</string>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
+                            <color key="textColor" red="0.13725490200000001" green="0.14901960780000001" blue="0.15686274510000001" alpha="0.77171148252325583" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How to join" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6j-ln-y6B">
+                            <rect key="frame" x="20" y="22" width="500" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="xAU-1O-SjL"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.80062984496124034" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1I-7R-5p1">
+                            <rect key="frame" x="0.0" y="169" width="540" height="2"/>
+                            <color key="backgroundColor" red="0.47450980392156861" green="0.47450980392156861" blue="0.47450980392156861" alpha="0.10876937984496124" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="2" id="m7q-3S-mmw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="uKr-0T-LhV" firstAttribute="centerX" secondItem="uBJ-Na-Qr8" secondAttribute="centerX" id="C3o-Am-MK8"/>
+                        <constraint firstItem="yhG-L5-YAM" firstAttribute="leading" secondItem="uBJ-Na-Qr8" secondAttribute="leading" id="DSf-oe-40c"/>
+                        <constraint firstAttribute="trailing" secondItem="a1I-7R-5p1" secondAttribute="trailing" id="IEF-OZ-ffj"/>
+                        <constraint firstAttribute="trailing" secondItem="h6j-ln-y6B" secondAttribute="trailing" constant="20" symbolic="YES" id="LCs-Rx-i3j"/>
+                        <constraint firstItem="a1I-7R-5p1" firstAttribute="top" secondItem="uKr-0T-LhV" secondAttribute="bottom" constant="24" id="R60-hn-xTa"/>
+                        <constraint firstItem="h6j-ln-y6B" firstAttribute="top" secondItem="uBJ-Na-Qr8" secondAttribute="top" constant="22" id="RZy-Fa-Wbu"/>
+                        <constraint firstAttribute="bottom" secondItem="yhG-L5-YAM" secondAttribute="bottom" id="UkN-nF-Tte"/>
+                        <constraint firstItem="uKr-0T-LhV" firstAttribute="top" secondItem="h6j-ln-y6B" secondAttribute="bottom" constant="22" id="Wpu-Rk-0E2"/>
+                        <constraint firstItem="h6j-ln-y6B" firstAttribute="leading" secondItem="uBJ-Na-Qr8" secondAttribute="leading" constant="20" symbolic="YES" id="bpz-Cp-4Jm"/>
+                        <constraint firstItem="uKr-0T-LhV" firstAttribute="centerX" secondItem="h6j-ln-y6B" secondAttribute="centerX" id="kp1-2p-K1b"/>
+                        <constraint firstItem="a1I-7R-5p1" firstAttribute="leading" secondItem="uBJ-Na-Qr8" secondAttribute="leading" id="nDd-8q-j2R"/>
+                        <constraint firstItem="yhG-L5-YAM" firstAttribute="top" secondItem="a1I-7R-5p1" secondAttribute="bottom" id="sLH-JM-THV"/>
+                        <constraint firstAttribute="trailing" secondItem="yhG-L5-YAM" secondAttribute="trailing" id="tVq-YT-4F3"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uBJ-Na-Qr8" firstAttribute="centerY" secondItem="VmV-Et-zFg" secondAttribute="centerY" multiplier="0.9" id="9n1-5j-ohB"/>
+                <constraint firstItem="rne-i0-UNM" firstAttribute="top" secondItem="VmV-Et-zFg" secondAttribute="top" id="GBJ-vx-eaW"/>
+                <constraint firstItem="uBJ-Na-Qr8" firstAttribute="width" secondItem="VmV-Et-zFg" secondAttribute="width" multiplier="0.9" id="GRC-f0-Isa"/>
+                <constraint firstItem="uBJ-Na-Qr8" firstAttribute="centerX" secondItem="VmV-Et-zFg" secondAttribute="centerX" id="Ivl-JA-wYX"/>
+                <constraint firstAttribute="trailing" secondItem="rne-i0-UNM" secondAttribute="trailing" id="LgD-JN-I3S"/>
+                <constraint firstAttribute="bottom" secondItem="rne-i0-UNM" secondAttribute="bottom" id="Viz-yN-Ch9"/>
+                <constraint firstItem="rne-i0-UNM" firstAttribute="leading" secondItem="VmV-Et-zFg" secondAttribute="leading" id="qI8-SO-hI4"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

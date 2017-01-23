@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeighInView" customModule="MyFitMembers" customModuleProvider="target">
+            <connections>
+                <outlet property="labelWeight" destination="Pgb-go-eXW" id="dXr-HP-lvT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="30" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjy-zD-ArV">
+                    <rect key="frame" x="0.0" y="0.0" width="30" height="36"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="98 kg" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pgb-go-eXW">
+                            <rect key="frame" x="4" y="1" width="22" height="33"/>
+                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.15686274509803921" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Pgb-go-eXW" secondAttribute="bottom" constant="2" id="2g1-jD-dc6"/>
+                        <constraint firstItem="Pgb-go-eXW" firstAttribute="centerY" secondItem="fjy-zD-ArV" secondAttribute="centerY" id="8qO-gL-fU1"/>
+                        <constraint firstItem="Pgb-go-eXW" firstAttribute="leading" secondItem="fjy-zD-ArV" secondAttribute="leading" constant="4" id="BDd-G8-hvX"/>
+                        <constraint firstItem="Pgb-go-eXW" firstAttribute="top" secondItem="fjy-zD-ArV" secondAttribute="top" constant="1" id="IYg-br-6Ey"/>
+                        <constraint firstAttribute="trailing" secondItem="Pgb-go-eXW" secondAttribute="trailing" constant="4" id="z6P-aO-eE6"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_beak_weight" translatesAutoresizingMaskIntoConstraints="NO" id="ld5-PT-ie8">
+                    <rect key="frame" x="9" y="35" width="13" height="6"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="ld5-PT-ie8" firstAttribute="bottom" secondItem="fjy-zD-ArV" secondAttribute="bottom" id="Dzs-Np-Fyz"/>
+                <constraint firstItem="ld5-PT-ie8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="EYj-fG-hVk"/>
+                <constraint firstItem="fjy-zD-ArV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="P0X-pd-eVJ"/>
+                <constraint firstAttribute="bottom" secondItem="fjy-zD-ArV" secondAttribute="bottom" constant="8" id="UIt-Kx-pu5"/>
+                <constraint firstItem="ld5-PT-ie8" firstAttribute="top" secondItem="fjy-zD-ArV" secondAttribute="bottom" constant="-1" id="UOx-IX-xCX"/>
+                <constraint firstItem="fjy-zD-ArV" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XJN-80-wlR"/>
+                <constraint firstItem="ld5-PT-ie8" firstAttribute="centerY" secondItem="fjy-zD-ArV" secondAttribute="centerY" id="aMq-Id-c2N"/>
+                <constraint firstAttribute="trailing" secondItem="fjy-zD-ArV" secondAttribute="trailing" id="t3t-xq-bDm"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="Dzs-Np-Fyz"/>
+                    <exclude reference="aMq-Id-c2N"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_beak_weight" width="13" height="6"/>
+    </resources>
+</document>

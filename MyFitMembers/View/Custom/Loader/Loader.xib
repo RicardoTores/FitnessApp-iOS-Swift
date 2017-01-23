@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Loader" customModule="MyFitMembers" customModuleProvider="target">
+            <connections>
+                <outlet property="indicator" destination="a0h-Om-09z" id="G4F-Ra-wkh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mjo-Ul-jrx">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="a0h-Om-09z">
+                            <rect key="frame" x="282" y="543" width="37" height="37"/>
+                            <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="a0h-Om-09z" firstAttribute="centerX" secondItem="Mjo-Ul-jrx" secondAttribute="centerX" id="EhN-g9-B2t"/>
+                        <constraint firstAttribute="bottom" secondItem="a0h-Om-09z" secondAttribute="bottom" constant="20" symbolic="YES" id="tbz-iO-X2S"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Mjo-Ul-jrx" secondAttribute="trailing" id="S54-xt-bWz"/>
+                <constraint firstAttribute="bottom" secondItem="Mjo-Ul-jrx" secondAttribute="bottom" id="ae4-6K-8jS"/>
+                <constraint firstItem="Mjo-Ul-jrx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="i4E-vS-vVO"/>
+                <constraint firstItem="Mjo-Ul-jrx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="m2m-rh-sFH"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

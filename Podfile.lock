@@ -1,0 +1,73 @@
+PODS:
+  - Alamofire (3.0.0)
+  - Crashlytics (3.8.3):
+    - Fabric (~> 1.6.3)
+  - ENSwiftSideMenu (0.1.1)
+  - EZSwiftExtensions (1.6)
+  - Fabric (1.6.8)
+  - Fusuma (0.5.3)
+  - Instabug (6.0.3)
+  - IQKeyboardManager (4.0.6)
+  - Material (1.42.9)
+  - Navigation-stack (0.0.8)
+  - PermissionScope (1.0.2)
+  - RMMapper (1.1.5)
+  - SABlurImageView (2.0.0)
+  - SKPhotoBrowser (3.1.2)
+  - SwiftLoader (0.2.5)
+  - SwiftyJSON (2.3.2)
+  - TYAlertController (1.1.8)
+  - XLPagerTabStrip (5.1.0)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - Alamofire (= 3.0.0)
+  - Crashlytics
+  - ENSwiftSideMenu
+  - EZSwiftExtensions
+  - Fabric
+  - Fusuma
+  - Instabug
+  - IQKeyboardManager
+  - Material
+  - Navigation-stack
+  - PermissionScope
+  - RMMapper
+  - SABlurImageView (~> 2.0.0)
+  - SKPhotoBrowser
+  - SwiftLoader
+  - SwiftyJSON
+  - TYAlertController
+  - XLPagerTabStrip (~> 5.0)
+  - YYWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: b61782387f81bcc538a0284cf2bb5d7995cd0a80
+  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  ENSwiftSideMenu: a934caefbe811e4925f172009349da4a49901307
+  EZSwiftExtensions: 6c5e29ae473b3d2edbf5472eab0a3d7bdb20215c
+  Fabric: 5755268d0171435ab167e3d0878a28a777deaf10
+  Fusuma: 02ffb3a9943792519f2c0972263b750acb550a49
+  Instabug: 4daae5fd154e8a83654f8d974ba008ce87b9a104
+  IQKeyboardManager: c52debb1967799ae7addb98eab0cf328083a874f
+  Material: a84ed893b7785f0d3c8d568e88c055f82b436473
+  Navigation-stack: 89e24d03c72baab6e455c90b505d805852e4ad9a
+  PermissionScope: 860828c5516d349b6f49e5491799cfef33c5ccc7
+  RMMapper: 21122d753c736d975f6c61e674afce8db73579af
+  SABlurImageView: 16636ea067f5d1f9a963e3b4a4f1476f19714e20
+  SKPhotoBrowser: e942c03c3206b5cf229fd4ce56b872bce800124a
+  SwiftLoader: 12d7a6f661f5e9a2c9a72003e7dd6162f4ff0cc4
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
+  TYAlertController: 502d3dbc5d007e68559400b509c736f60ebc2cc1
+  XLPagerTabStrip: 9191deaa2336735b7c47beb21e42be537fa4242a
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+
+COCOAPODS: 0.39.0
